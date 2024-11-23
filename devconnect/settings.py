@@ -125,3 +125,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 LOGIN_REDIRECT_URL = '/feed/'  # Redirect to feed page after login
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-seafzz-pp4-fojtxq78lnt.ws-eu116.gitpod.io',  # Your Gitpod URL
+]
