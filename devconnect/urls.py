@@ -20,7 +20,7 @@ from social import views
 from django.contrib.auth import views as auth_views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('accounts/register/', views.register, name='register'),
     path('feed/', views.feed, name='feed'),
     path('create-post/', views.create_post, name='create_post'),
     path('booking/', views.booking, name='booking'),
