@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-</head>
-<body>
-    <h1>Welcome to the Home Page!</h1>
-    <p>Check out the <a href="{% url 'feed' %}">Feed</a> or <a href="{% url 'create_post' %}">Create a post</a>.</p>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block title %}Home - DevConnect{% endblock %}
+
+{% block content %}
+    <h2>Welcome to the Home Page!</h2>
+    <p>Explore the platform and connect with other developers.</p>
+{% endblock %}
