@@ -19,6 +19,8 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('social.urls')),
-    path('booking/', include('booking.urls')),
+    path('feed/', views.feed, name='feed'),
+    path('create-post/', views.create_post, name='create_post'),
+    path('booking/', views.booking, name='booking'),
+    path('', views.home, name='home'),  # Root URL
 ]
