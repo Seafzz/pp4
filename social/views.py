@@ -3,6 +3,7 @@ from .models import Post
 from .forms import PostForm
 from django.contrib.auth.decorators import login_required
 
+@login_required
 def feed(request):
     posts = Post.objects.all().order_by('-created_at')
     return render(request, 'social/feed.html', {'posts': posts})
