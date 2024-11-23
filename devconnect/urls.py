@@ -25,4 +25,8 @@ urlpatterns = [
     path('create-post/', views.create_post, name='create_post'),
     path('booking/', views.booking, name='booking'),
     path('', views.home, name='home'),
+
+    # Login URL
+    path('accounts/login/', auth_views.LoginView.as_view(), name='login'),  # Default Django login view
+    path('accounts/logout/', auth_views.LogoutView.as_view(), name='logout'),  # Default Django logout view
 ]
