@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .models import Post
 from .forms import PostForm
+from django.contrib.auth.decorators import login_required
 
 def feed(request):
     posts = Post.objects.all().order_by('-created_at')
