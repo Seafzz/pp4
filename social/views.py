@@ -10,7 +10,7 @@ def home(request):
 @login_required
 def feed(request):
     posts = Post.objects.all().order_by('-created_at')
-    return render(request, 'social/feed.html', {'posts': posts})
+    return render(request, 'feed.html', {'posts': posts})
 
 @login_required
 def create_post(request):
@@ -24,4 +24,8 @@ def create_post(request):
     else:
         form = PostForm()
 
-    return render(request, 'social/create_post.html', {'form': form})
+    return render(request, 'create_post.html', {'form': form})
+
+def booking(request):
+    
+    return render(request, 'booking.html')
