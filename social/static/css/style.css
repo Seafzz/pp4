@@ -137,6 +137,10 @@ textarea {
     height: 150px;
 }
 
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
 
 
 /* Media querry responsive Navbar */
