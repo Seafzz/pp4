@@ -1,4 +1,11 @@
 /* General styl"*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/*Body*/
+
 body{
     background-color: #121212; /* Dark background */
     color: #e0e0e0; /* Light text for contrast */
