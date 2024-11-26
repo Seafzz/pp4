@@ -35,17 +35,24 @@ def create_post(request):
 
     return render(request, 'create_post.html', {'form': form})
 
-# Booking page (can be extended later)
+# Booking page
 def booking(request):
     return render(request, 'booking.html')
 
+# Register a new user and auto log in
 def register(request):
+    if request.user.is_authenticated:  # Check if the user is already logged in
+        return redirect('feed')  # Redirect to feed if user is already logged in
+    
     if request.method == 'POST':
         form = CustomUserCreationForm(request.POST)
         if form.is_valid():
-            user=form.save()
-            login(request, user) #Autologin after user reg
-            return redirect('home')
+            user = form.save()  # Save the new user
+            login(request, user)  # Automatically log the user in
+            messages.success(request, 'Registration successful! You are now logged in.')  # Success message
+            return redirect('home')  # Redirect to home page after registration
+        else:
+            messages.error(request, 'There was an error with your registration. Please try again.')  # Error message
     else:
         form = CustomUserCreationForm()
 
