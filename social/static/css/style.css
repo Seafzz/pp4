@@ -47,3 +47,17 @@ h1, h2, h3, h4 {
 ::-webkit-scrollbar-track {
     background-color: #f1f1f1;
 }
+
+/* Navbar Style */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    padding: 15px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
