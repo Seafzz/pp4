@@ -72,3 +72,8 @@ h1, h2, h3, h4 {
 .navbar a:hover {
     background-color: #0056b3;
 }
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
