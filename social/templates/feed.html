@@ -1,7 +1,17 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
 
-{% block title %}Feed{% endblock %}
 {% block content %}
-<h1>Feed</h1>
-<p>Welcome to the social feed!</p>
+    <h2>Posts Feed</h2>
+    {% for post in posts %}
+        <div class="post">
+            <p>{{ post.user.username }} says:</p>
+            <p>{{ post.content }}</p>
+            {% if post.image %}
+                <img src="{{ post.image.url }}" alt="Post Image" />
+            {% endif %}
+            <p>Posted on: {{ post.created_at }}</p>
+        </div>
+    {% empty %}
+        <p>No posts available.</p>
+    {% endfor %}
 {% endblock %}
