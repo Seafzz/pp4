@@ -5,3 +5,5 @@
 {% block content %}
 <div class="container">
     <h1>Create a New Post</h1>
+    <form method="post" enctype="multipart/form-data" class="post-form">
+        {% csrf_token %}
