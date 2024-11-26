@@ -11,21 +11,25 @@ from django.contrib import messages
 def home(request):
     return render(request, 'home.html')
 
-# Only accessible if the user is logged in
+# Only accessible if the user is logged in (only acces logged in)
 @login_required
 def feed(request):
     posts = Post.objects.all().order_by('-created_at')  # Fetch all posts ordered by date
     return render(request, 'feed.html', {'posts': posts})
 
+create a post - Only accessible if the user is logged in
 @login_required
 def create_post(request):
     if request.method == 'POST':
-        form = PostForm(request.POST, request.FILES)
+        form = PostForm(request.POST, request.FILES)  # Handle file uploads as well
         if form.is_valid():
             post = form.save(commit=False)
-            post.user = request.user
+            post.user = request.user  # Assign the post to the current logged-in user
             post.save()
-            return redirect('feed')
+            messages.success(request, 'Your post has been created successfully.')  # Show success message
+            return redirect('feed')  # Redirect to the feed page after creating the post
+        else:
+            messages.error(request, 'There was an error with your form submission. Please try again.')  # Show error message
     else:
         form = PostForm()
 
