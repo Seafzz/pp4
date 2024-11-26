@@ -132,6 +132,11 @@ input[type="submit"], .btn {
     padding: 12px;
 }
 
+textarea {
+    resize: vertical;
+    height: 150px;
+}
+
 
 
 /* Media querry responsive Navbar */
