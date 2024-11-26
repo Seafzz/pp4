@@ -31,3 +31,9 @@ h1, h2, h3, h4 {
     margin: 0 auto;
     max-width: 1200px;
 }
+
+/* Custom scrollingbar */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
