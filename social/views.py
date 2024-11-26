@@ -35,8 +35,8 @@ def create_post(request):
 
     return render(request, 'create_post.html', {'form': form})
 
+# Booking page (can be extended later)
 def booking(request):
-    
     return render(request, 'booking.html')
 
 def register(request):
