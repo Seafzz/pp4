@@ -50,3 +50,15 @@ label {
     font-size: 1rem;
     margin-bottom: 8px;
 }
+
+/* Input Style */
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #333; /* Dark input background */
+    border: 1px solid #444;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1rem;
+}
