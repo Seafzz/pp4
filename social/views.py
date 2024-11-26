@@ -11,9 +11,10 @@ from django.contrib import messages
 def home(request):
     return render(request, 'home.html')
 
+# Only accessible if the user is logged in
 @login_required
 def feed(request):
-    posts = Post.objects.all().order_by('-created_at')
+    posts = Post.objects.all().order_by('-created_at')  # Fetch all posts ordered by date
     return render(request, 'feed.html', {'posts': posts})
 
 @login_required
