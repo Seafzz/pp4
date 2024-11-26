@@ -118,6 +118,16 @@ form {
     margin: 20px 0;
 }
 
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+
 
 
 /* Media querry responsive Navbar */
