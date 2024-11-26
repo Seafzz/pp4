@@ -52,6 +52,10 @@ nav ul li a {
     transition: background-color 0.3s ease;
 }
 
+nav ul li a:hover {
+    background-color: #1e90ff; /* Blue highlight on hover */
+}
+
 
 h1 {
     font-size: 2rem;
