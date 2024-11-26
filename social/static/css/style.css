@@ -152,6 +152,9 @@ input[type="submit"]:hover {
     flex-direction: column;
     transition: transform 0.3s ease-in-out;
 }
+.card:hover {
+    transform: translateY(-10px);
+}
 
 
 
