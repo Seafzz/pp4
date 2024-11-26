@@ -32,3 +32,10 @@ h1 {
     text-align: center;
     font-weight: 600;
 }
+
+/* Form Elements */
+.post-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
