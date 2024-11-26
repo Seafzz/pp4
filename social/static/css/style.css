@@ -100,6 +100,10 @@ button, .btn {
     transition: background-color 0.3s;
 }
 
+button:hover, .btn:hover {
+    background-color: #0056b3;
+}
+
 
 /* Media querry responsive Navbar */
 
