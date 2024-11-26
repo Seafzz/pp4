@@ -127,6 +127,10 @@ input, textarea {
     font-size: 1rem;
 }
 
+input[type="submit"], .btn {
+    width: 100%;
+    padding: 12px;
+}
 
 
 
