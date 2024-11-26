@@ -17,7 +17,7 @@ def feed(request):
     posts = Post.objects.all().order_by('-created_at')  # Fetch all posts ordered by date
     return render(request, 'feed.html', {'posts': posts})
 
-create a post - Only accessible if the user is logged in
+# create a post - Only accessible if the user is logged in
 @login_required
 def create_post(request):
     if request.method == 'POST':
