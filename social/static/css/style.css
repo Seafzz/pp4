@@ -25,3 +25,9 @@ a:hover {
 h1, h2, h3, h4 {
     color: #333;
 }
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
