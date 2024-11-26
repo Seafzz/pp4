@@ -130,3 +130,5 @@ LOGIN_REDIRECT_URL = '/feed/'  # Redirect to feed page after login
 CSRF_TRUSTED_ORIGINS = [
     'https://*.gitpod.io',
 ]
+
+LOGIN_URL = '/accounts/login/'
