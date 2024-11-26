@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-!-ksr&#v756kpg5jwcpmvy0ja+lu4eip(_^l1q$d9vv@0@xl#_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-seafzz-pp4-fojtxq78lnt.ws-eu116.gitpod.io']
+ALLOWED_HOSTS = ['8000-seafzz-pp4-zuey3fa0ft4.ws-eu116.gitpod.io']
 
 
 # Application definition
@@ -128,5 +128,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_REDIRECT_URL = '/feed/'  # Redirect to feed page after login
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-seafzz-pp4-fojtxq78lnt.ws-eu116.gitpod.io',  # Your Gitpod URL
+    'https://*.gitpod.io',
 ]
