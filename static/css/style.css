@@ -118,3 +118,23 @@ button:focus {
 .alert-info {
     background-color: #2196F3; /* Blue for info messages */
 }
+/* mediaQuery */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .form-group label {
+        font-size: 0.9rem;
+    }
+
+    input[type="text"],
+    textarea,
+    button {
+        font-size: 1rem;
+    }
+}
