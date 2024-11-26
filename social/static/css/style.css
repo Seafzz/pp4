@@ -166,6 +166,12 @@ input[type="submit"]:hover {
     color: #555;
 }
 
+.card-footer {
+    text-align: right;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
 
 
 /* Media querry responsive Navbar */
