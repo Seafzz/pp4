@@ -39,3 +39,14 @@ h1 {
     flex-direction: column;
     gap: 20px;
 }
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: #aaa;
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
