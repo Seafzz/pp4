@@ -62,3 +62,8 @@ textarea {
     color: #fff;
     font-size: 1rem;
 }
+input[type="text"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #1e90ff; /* Highlight input fields with a blue border on focus */
+}
