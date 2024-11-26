@@ -81,3 +81,15 @@ input[type="file"] {
 input[type="file"]:hover {
     background-color: #444;
 }
+
+/* Submit Button */
+button {
+    padding: 12px;
+    background-color: #1e90ff; /* Blue color */
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
