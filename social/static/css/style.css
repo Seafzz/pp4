@@ -141,6 +141,18 @@ input[type="submit"]:hover {
     background-color: #0056b3;
 }
 
+/* Card Styles */
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease-in-out;
+}
+
 
 
 /* Media querry responsive Navbar */
