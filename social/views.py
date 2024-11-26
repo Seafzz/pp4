@@ -5,6 +5,9 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth import login
 from .forms import CustomUserCreationForm
 from django.contrib import messages
+
+
+# Home page v
 def home(request):
     return render(request, 'home.html')
 
